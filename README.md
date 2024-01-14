@@ -32,7 +32,7 @@ The Circular Queue is implemented using a linked list structure with a Node clas
 - `index.html`: The main HTML file containing the input form.
 - `result.html`: Displays the result after the calculation.
 - `styles.css`: CSS file for styling.
-- `script.js`: JavaScript file containing the Circular Queue implementation and algorithm logic.
+- `main.js`: JavaScript file containing the Circular Queue implementation and algorithm logic.
 
 ## Getting Started
 

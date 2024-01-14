@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relationship</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+<body>
+  <div class="container1">
+    <div class="card">
+      
+      <h2 id="res"></h2>
+
+      <div id="img"></div>
+
+    </div>
+  </div>
+  <script src="result.js"></script>
+  
+  <script>
+
+    var result = sessionStorage.getItem('result');
+
+    let URL_array = ['./images/friend.jpg','./images/love.jpg','./images/affection.jpg','./images/marriage.jpeg','./images/enemy.jpg','./images/sister.jpg'];
+
+    var imageContainer = document.createElement('img');
+
+    imageContainer.src = URL_array[result-1];
+
+    document.getElementById('img').appendChild(imageContainer);
+
+    switch (result) {
+    case '1':
+      result = "Friendship";
+      break;
+    case '2':
+      result = "Love";
+      break;
+    case '3':
+      result = "Affection";
+      break;
+    case '4':
+      result = "Marriage";
+      break;
+    case '5':
+      result = "Enemy";
+      break;
+    case '6':
+      result = "Sister";
+      break;
+    default:
+      result = "The given words are Anagrams";
+      break;
+    }
+
+    document.getElementById('res').innerHTML = 'The relationship between you and your secret crush would be '+result;
+
+  </script>
+</body>
+</html>
